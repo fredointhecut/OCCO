@@ -7,7 +7,6 @@
   <title>OCCO</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="src/styles/main.css" />
-  <script src="src/scripts/main.js"></script>
 </head>
 
 <body>
@@ -28,9 +27,12 @@
     </div>
   </section>
 
+
+
   <!-- TEAM -->
   <section class="team">
     <h1>Meet our designers</h1>
+    <button id="btn1">TERE</button>
     <div class="content">
 
 
@@ -77,16 +79,6 @@
             <span class="title">Logistika</span>
           </div>
           <span class="occo-line"></span>
-          <ul class="contacts">
-            <li>
-              <span class="icon ico-mail"></span>
-              <a href="mailto:katriin@occo.ee" class="value">katriin@occo.ee</a>
-            </li>
-            <li>
-              <span class="icon ico-phone"></span>
-              <a href="tel:+372 5664 5665" class="value">+372 5664 5665</a>
-            </li>
-          </ul>
         </div>
       </div>
 
@@ -107,7 +99,7 @@
 
 
       <!-- MEMBER -->
-      <div class="member">
+      <div class="member member-hidden">
         <div class="pic">
           <img src="https://occo.ee/wp-content/uploads/2019/09/Mila.jpg" alt="Mila Lihhatsova">
         </div>
@@ -122,7 +114,7 @@
 
 
       <!-- MEMBER -->
-      <div class="member">
+      <div class="member member-hidden">
         <div class="pic">
           <img src="https://occo.ee/wp-content/uploads/2019/09/Carolyna.jpg" alt="Carolyna Kodar">
         </div>
@@ -137,7 +129,7 @@
 
 
       <!-- MEMBER -->
-      <div class="member">
+      <div class="member member-hidden">
         <div class="pic">
           <img src="https://occo.ee/wp-content/uploads/2019/09/Anet.jpg" alt="Anet Männamaa">
         </div>
@@ -152,7 +144,7 @@
 
 
       <!-- MEMBER -->
-      <div class="member">
+      <div class="member member-hidden">
         <div class="pic">
           <img src="https://occo.ee/wp-content/uploads/2019/09/Helen.jpg" alt="Helen Aaver">
         </div>
@@ -333,11 +325,13 @@
 
     <input type="checkbox" id="contact-form">
     <div class="contact-1">
-      <div class="content" style="background-image: url('https://occo.ee/wp-content/uploads/2019/10/Julija-Steptšenko.jpg')">
+      <div class="content"
+        style="background-image: url('https://occo.ee/wp-content/uploads/2019/10/Julija-Steptšenko.jpg')">
         <div class="txt">
           <div class="description">
             <h2 class="text-gradient">Contact us</h2>
-            <p>If you want more information about or products or services, please contact us or fill in the online enquery form.
+            <p>If you want more information about or products or services, please contact us or fill in the online
+              enquery form.
               It is our pleasure to assist you</p>
           </div>
           <div class="contacts">
@@ -372,49 +366,57 @@
 
               <div class='gf_browser_chrome gform_wrapper' id='gform_wrapper_4'>
                 <div id='gf_4' class='gform_anchor' tabindex='-1'></div>
-                <form method='post' enctype='multipart/form-data' target='gform_ajax_frame_4' id='gform_4' action='/kodu/#gf_4'>
+                <form method='post' enctype='multipart/form-data' target='gform_ajax_frame_4' id='gform_4'
+                  action='/kodu/#gf_4'>
                   <div class="gf-recaptcha-div"></div>
                   <div class='gform_body'>
                     <ul id='gform_fields_4' class='gform_fields top_label form_sublabel_below description_below'>
-                      <li id='field_4_1' class='gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible'>
+                      <li id='field_4_1'
+                        class='gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible'>
                         <label class='gfield_label' for='input_4_1'>Teie nimi</label>
                         <div class='ginput_container ginput_container_text'>
-                          <input name='input_1' id='input_4_1' type='text' value='' class='medium' tabindex='1' placeholder='Teie nimi' aria-required="true"
-                            aria-invalid="false" />
+                          <input name='input_1' id='input_4_1' type='text' value='' class='medium' tabindex='1'
+                            placeholder='Teie nimi' aria-required="true" aria-invalid="false" />
                           <span class="floating-label">Teie nimi</span>
                         </div>
                       </li>
-                      <li id='field_4_2' class='gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible'>
+                      <li id='field_4_2'
+                        class='gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible'>
                         <label class='gfield_label' for='input_4_2'>Teie Email</label>
                         <div class='ginput_container ginput_container_email'>
-                          <input name='input_2' id='input_4_2' type='text' value='' class='medium' tabindex='2' placeholder='Teie e-posti aadress'
-                            aria-required="true" aria-invalid="false" />
+                          <input name='input_2' id='input_4_2' type='text' value='' class='medium' tabindex='2'
+                            placeholder='Teie e-posti aadress' aria-required="true" aria-invalid="false" />
                           <span class="floating-label">Teie e-posti aadress</span>
                         </div>
                       </li>
-                      <li id='field_4_4' class='gfield field_sublabel_below field_description_below gfield_visibility_visible'>
+                      <li id='field_4_4'
+                        class='gfield field_sublabel_below field_description_below gfield_visibility_visible'>
                         <label class='gfield_label' for='input_4_4'>Teie telefoninumber</label>
                         <div class='ginput_container ginput_container_text'>
-                          <input name='input_4' id='input_4_4' type='text' value='' class='medium' tabindex='3' placeholder='Teie telefoninumber (valikuline)'
-                            aria-invalid="false" />
+                          <input name='input_4' id='input_4_4' type='text' value='' class='medium' tabindex='3'
+                            placeholder='Teie telefoninumber (valikuline)' aria-invalid="false" />
                           <span class="floating-label">Teie telefoninumber (valikuline)</span>
                         </div>
                       </li>
-                      <li id='field_4_5' class='gfield field_sublabel_below field_description_below gfield_visibility_visible'>
+                      <li id='field_4_5'
+                        class='gfield field_sublabel_below field_description_below gfield_visibility_visible'>
                         <label class='gfield_label' for='input_4_5'>Sõnum</label>
                         <div class='ginput_container ginput_container_textarea'>
-                          <textarea name='input_5' id='input_4_5' class='textarea medium' tabindex='4' placeholder='Sõnum' aria-invalid="false" rows='10'
-                            cols='50'></textarea>
+                          <textarea name='input_5' id='input_4_5' class='textarea medium' tabindex='4'
+                            placeholder='Sõnum' aria-invalid="false" rows='10' cols='50'></textarea>
                           <span class="floating-label">Sõnum</span>
                         </div>
                       </li>
-                      <li id='field_4_6' class='gfield field_sublabel_below field_description_below gfield_visibility_visible'>
+                      <li id='field_4_6'
+                        class='gfield field_sublabel_below field_description_below gfield_visibility_visible'>
                         <label class='gfield_label' for='input_4_6'>Untitled</label>
                       </li>
                     </ul>
                   </div>
                   <div class='gform_footer top_label'>
-                    <button type='submit' onclick='if(window["gf_submitting_4"]){return false;}  window["gf_submitting_4"]=true;  ' onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_4"]){return false;} window["gf_submitting_4"]=true;  jQuery("#gform_4").trigger("submit",[true]); }'
+                    <button type='submit'
+                      onclick='if(window["gf_submitting_4"]){return false;}  window["gf_submitting_4"]=true;  '
+                      onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_4"]){return false;} window["gf_submitting_4"]=true;  jQuery("#gform_4").trigger("submit",[true]); }'
                       id='gform_submit_button_4' class='gform_button button occo-btn is-light'>
                       <span class='txt'>Saada</span>
                     </button>
@@ -439,10 +441,11 @@
 
   <div class="information">
     <div class="information-image">
-      <img src="./images/apple.jpg">
+      <img
+        src="https://www.crismatec.com/python/in/fancy-interior-design-living-room-decobizzcom_house-interior-elements.jpg">
     </div>
     <div class="information-text">
-      <h1>What do i get?</h1>
+      <h2>What do i get?</h2>
       <li>Direct access to
         <span>500+ interior brands</span> of Europe</li>
 
@@ -452,30 +455,13 @@
       <li>Alternative generator with
         <span>100 000+ products</span>
 
-        <li>
-          <span>Live project management</span> and budgeting</li>
+      <li>
+        <span>Live project management</span> and budgeting</li>
 
-        <li>
-          <span>Turn key service</span> for your clients</li>
+      <li>
+        <span>Turn key service</span> for your clients</li>
     </div>
   </div>
-
-
-
-
-
-
-  <!-- <h2>What do i get?</h2>
-
-            <li>Direct access to<span>500+ interior brands</span> of Europe</li>
-
-            <li><span>Higher commission</span> on sales generated</li>
-
-            <li>Alternative generator with<span>100 000+ products</span>
-
-            <li><span>Live project management</span> and budgeting</li>
-
-            <li><span>Turn key service</span> for your clients</li> -->
 
 
 
@@ -493,7 +479,8 @@
       <a href="https://occo.ee/kontor/iutecredit-europe/" class="case">
         <span class="tile tile-left">
           <span class="pic">
-            <img src="https://occo.ee/wp-content/uploads/2019/10/Iutecredit-väike-portfolio.jpg" alt="Rahvusvaheline tarbimislaenude ettevõte">
+            <img src="https://occo.ee/wp-content/uploads/2019/10/Iutecredit-väike-portfolio.jpg"
+              alt="Rahvusvaheline tarbimislaenude ettevõte">
           </span>
           <span class="description">
             <span class="subtitle">Office</span>
@@ -535,7 +522,9 @@
 
 
 
-
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script src="src/scripts/main.js"></script>
 
 </body>
 
