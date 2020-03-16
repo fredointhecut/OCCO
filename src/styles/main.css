@@ -1480,6 +1480,37 @@
    }
  }
 
+ @media (max-width: 768px) {
+
+   a.brand-item,
+   .brand-item {
+     -ms-flex-preferred-size: 25%;
+     flex-basis: 32%;
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
+     justify-content: center;
+     text-align: center;
+     justify-self: stretch;
+     height: 40.55vh;
+     padding: 0 1.04vw;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+     -ms-flex-direction: column;
+     flex-direction: column;
+     -ms-flex-line-pack: center;
+     align-content: center;
+     -webkit-box-pack: start;
+     -ms-flex-pack: start;
+     justify-content: flex-start;
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+     text-decoration: none;
+   }
+ }
+
  @media (max-width: 468px) {
 
    a.brand-item,
