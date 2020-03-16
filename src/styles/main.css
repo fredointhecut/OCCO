@@ -2861,6 +2861,15 @@
    }
  }
 
+ .team h2 {
+   color: rgb(255, 255, 255);
+   margin-top: 0px;
+   font-weight: 300;
+   font-size: 30px;
+   text-align: center;
+   letter-spacing: 2px;
+ }
+
 
 
  .member-hidden {
@@ -2944,14 +2953,6 @@
    text-align: center;
  }
 
- .team h2 {
-   color: rgb(255, 255, 255);
-   margin-top: 0px;
-   font-weight: 300;
-   font-size: 30px;
-   text-align: center;
-   letter-spacing: 2px;
- }
 
  .brand-hidden {
    display: none;
