@@ -2931,7 +2931,7 @@
    display: flex;
    margin: 0px auto;
    margin-top: 21vh;
-   border-radius: 100%;
+   border-radius: 50%;
    border: 8px solid #000;
 
  }
@@ -2943,7 +2943,7 @@
    display: flex;
    margin: 0px auto;
    margin-top: 12vh;
-   border-radius: 100%;
+   border-radius: 50%;
    border: 8px solid #000;
  }
 
